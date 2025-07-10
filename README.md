@@ -1,11 +1,11 @@
 # LeetCode C++ Solutions 🚀
 
-A comprehensive collection of C++ solutions for LeetCode problems, featuring 3000+ solved problems across all difficulty levels.
+A comprehensive collection of JavaScript solutions for LeetCode problems, featuring 3000+ solved problems across all difficulty levels.
 
 ## 📊 Stats
 
 - **Total Problems Solved**: 3000+
-- **Language**: C++
+- **Language**: Js
 - **Difficulty Coverage**: Easy, Medium, Hard
 - **Status**: Actively maintained
 
