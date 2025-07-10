@@ -33,8 +33,7 @@ Each solution includes:
 - **Problem statement** (brief description)
 - **Approach explanation**
 - **Time & Space complexity**
-- **Clean C++ implementation**
-- **Test cases** (where applicable)
+- **Clean Js implementation**
 
 ## 🔧 How to Use
 
