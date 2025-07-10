@@ -1,3 +1,4 @@
+//  9. Palindrome Number
 /**
  * @param {number} x
  * @return {boolean}
