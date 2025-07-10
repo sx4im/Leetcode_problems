@@ -1,4 +1,4 @@
-# LeetCode C++ Solutions 🚀
+# LeetCode Javascript Solutions 🚀
 
 A comprehensive collection of JavaScript solutions for LeetCode problems, featuring 3000+ solved problems across all difficulty levels.
 
