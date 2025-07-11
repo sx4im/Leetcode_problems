@@ -4,7 +4,7 @@ A comprehensive collection of JavaScript solutions for LeetCode problems, featur
 
 ## 📊 Stats
 
-- **Total Problems Solved**: 3000+
+- **Total Problems Solved**: 500+
 - **Language**: Js
 - **Difficulty Coverage**: Easy, Medium, Hard
 - **Status**: Actively maintained
