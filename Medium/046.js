@@ -1,30 +1,24 @@
-// 46. Permutations
 /**
  * @param {number[]} nums
  * @return {number[][]}
  */
-var permuteUnique = function(nums) {
-    nums.sort((a, b) => a - b);
+var permute = function(nums) {
     const res = [];
-    const used = Array(nums.length).fill(false);
 
-    const backtrack = (path) => {
-        if (path.length === nums.length) {
-            res.push([...path]);
+    const backtrack = (path, remaining) => {
+        if (!remaining.length) {
+            res.push(path);
             return;
         }
 
-        for (let i = 0; i < nums.length; i++) {
-            if (used[i] || (i > 0 && nums[i] === nums[i - 1] && !used[i - 1])) continue;
-
-            used[i] = true;
-            path.push(nums[i]);
-            backtrack(path);
-            path.pop();
-            used[i] = false;
+        for (let i = 0; i < remaining.length; i++) {
+            backtrack(
+                [...path, remaining[i]],
+                [...remaining.slice(0, i), ...remaining.slice(i + 1)]
+            );
         }
     };
 
-    backtrack([]);
+    backtrack([], nums);
     return res;
 };
