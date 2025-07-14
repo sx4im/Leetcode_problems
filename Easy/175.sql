@@ -1,4 +1,4 @@
--- // 175. Combine Two Tables
+-- 175. Combine Two Tables
 # Write your MySQL query statement below
 SELECT 
     Person.FirstName, 
