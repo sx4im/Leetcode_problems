@@ -4,15 +4,14 @@
  * @return {number[][]}
  */
 var generate = function(numRows) {
-    let res = [[1]];
-    for (let i = 1; i < numRows; i++) {
-        let row = [1];
-        let prev = res[i - 1];
-        for (let j = 1; j < i; j++) {
-            row.push(prev[j - 1] + prev[j]);
-        }
-        row.push(1);
-        res.push(row);
-    }
-    return res;
+  const result = [[1]];
+  
+  for (let i = 1; i < numRows; i++) {
+    result[i] = [1];
+    result[i - 1].forEach((value, j, prev) => {
+      result[i][j + 1] = (prev[j + 1] + value) || 1;
+    });
+  }
+  
+  return result;
 };
