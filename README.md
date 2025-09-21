@@ -1,88 +1,137 @@
-# LeetCode Javascript Solutions 🚀
+<div align="center">
 
-A comprehensive collection of JavaScript solutions for LeetCode problems, featuring 3000+ solved problems across all difficulty levels.
+# 🎯 LeetCode JavaScript Solutions
 
-## 📊 Stats
+*Clean • Efficient • Well-Documented*
 
-- **Total Problems Solved**: 500+
-- **Language**: Js
-- **Difficulty Coverage**: Easy, Medium, Hard
-- **Status**: Actively maintained
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript)](https://github.com/sx4im/Leetcode_problems)
+[![Problems](https://img.shields.io/badge/Problems-500+-brightgreen?style=for-the-badge)](https://github.com/sx4im/Leetcode_problems)
+[![Maintained](https://img.shields.io/badge/Maintained-Yes-blue?style=for-the-badge)](https://github.com/sx4im/Leetcode_problems)
 
-## 🗂️ Repository Structure
+---
+
+</div>
+
+## 📊 **At a Glance**
+
+<table align="center">
+<tr>
+<td align="center"><b>🎯 Total Problems</b><br><code>500+</code></td>
+<td align="center"><b>💻 Language</b><br><code>JavaScript ES6+</code></td>
+<td align="center"><b>📈 Difficulties</b><br><code>Easy • Medium • Hard</code></td>
+</tr>
+</table>
+
+## 🗂️ **Repository Structure**
 
 ```
-├── Easy/
-│   ├── 001-two-sum/
-│   ├── 009-palindrome-number/
-│   └── ...
-├── Medium/
-│   ├── 002-add-two-numbers/
-│   ├── 003-longest-substring/
-│   └── ...
-├── Hard/
-│   ├── 004-median-two-sorted-arrays/
-│   ├── 023-merge-k-sorted-lists/
-│   └── ...
-└── README.md
+📦 Leetcode_problems
+ ┣ 📂 Easy/
+ ┃ ┗ 📁 001-two-sum/
+ ┣ 📂 Medium/  
+ ┃ ┗ 📁 002-add-two-numbers/
+ ┣ 📂 Hard/
+ ┃ ┗ 📁 004-median-two-sorted-arrays/
+ ┗ 📜 README.md
 ```
 
-## 💡 Solution Format
+## ⚡ **Quick Start**
 
-Each solution includes:
-- **Problem statement** (brief description)
-- **Approach explanation**
-- **Time & Space complexity**
-- **Clean Js implementation**
+<details>
+<summary><b>🚀 Setup & Run</b></summary>
 
-## 🔧 How to Use
+```bash
+# 📥 Clone the repository
+git clone https://github.com/sx4im/Leetcode_problems.git
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/leetcode-cpp-solutions.git
-   cd leetcode-cpp-solutions
-   ```
+# 📁 Navigate to directory
+cd Leetcode_problems/Easy/001-two-sum/
 
-2. **Navigate to specific problem**:
-   ```bash
-   cd Easy/001-two-sum/
-   ```
+# 🏃‍♂️ Run solution
+node solution.js
+```
 
-3. **Compile and run**:
-   ```bash
-   g++ -o solution solution.cpp
-   ./solution
-   ```
+</details>
 
-## 📈 Progress Tracking
+## 💎 **What You Get**
 
-- ✅ **Easy**: 1000+ problems
-- ✅ **Medium**: 1500+ problems  
-- ✅ **Hard**: 500+ problems
+> 🔗 **LeetCode Problem Links** | 🧠 **Multiple Approaches** | ⏱️ **Complexity Analysis** | ✅ **Test Cases**
 
-## 🎯 Key Topics Covered
+<div align="center">
 
-- **Data Structures**: Arrays, Strings, Linked Lists, Trees, Graphs, Heaps
-- **Algorithms**: Sorting, Searching, Dynamic Programming, Greedy, Backtracking
-- **Techniques**: Two Pointers, Sliding Window, Binary Search, DFS/BFS
-- **Advanced**: Trie, Union Find, Segment Tree, Bit Manipulation
+| Feature | Description |
+|---------|-------------|
+| 📝 **Clean Code** | Readable & well-commented solutions |
+| 🎯 **Optimized** | From brute force to optimal approaches |
+| 📊 **Analyzed** | Time & space complexity included |
+| 🧪 **Tested** | Comprehensive test cases |
 
-## 🤝 Contributing
+</div>
 
-Feel free to:
-- Report bugs or suggest improvements
-- Add alternative solutions
-- Optimize existing code
-- Add more test cases
+## 🎨 **Topics Mastered**
 
-## 📝 Notes
+<div align="center">
 
-- All solutions are tested and verified on LeetCode
-- Focus on clean, readable, and efficient code
-- Includes both optimal and brute force approaches where relevant
-- Regular updates with new problems
+### 🏗️ **Data Structures**
+`Arrays` • `Strings` • `Linked Lists` • `Trees` • `Graphs` • `Hash Tables` • `Heaps` • `Stacks` • `Queues`
 
+### 🧮 **Algorithms** 
+`Two Pointers` • `Sliding Window` • `Binary Search` • `Dynamic Programming` • `Greedy` • `Backtracking` • `DFS/BFS`
 
-⭐ **Star this repo if you find it helpful!** ⭐
+### 🔬 **Advanced Topics**
+`Trie` • `Union Find` • `Bit Manipulation` • `Segment Trees`
 
-*Happy Coding! 🎉*
+</div>
+
+## 📈 **Progress Dashboard**
+
+<div align="center">
+
+```
+🟢 Easy    ████████████████████░░░░░░░░  200+ solved
+🟡 Medium  ██████████████████░░░░░░░░░░  250+ solved  
+🔴 Hard    ██████░░░░░░░░░░░░░░░░░░░░░░   50+ solved
+```
+
+**Total Progress: 500+ Problems Conquered! 🏆**
+
+</div>
+
+## 📋 **Solution Template**
+
+```javascript
+/**
+ * 🎯 Problem: Two Sum - Easy
+ * 🔗 https://leetcode.com/problems/two-sum/
+ * ⏰ Time: O(n) | 💾 Space: O(n)
+ */
+
+const twoSum = (nums, target) => {
+    // ✨ Your elegant solution here
+};
+
+// 🧪 Test
+console.log(twoSum([2,7,11,15], 9)); // [0,1]
+```
+
+## 🤝 **Contributing**
+
+<div align="center">
+
+**Love this repo? Here's how to contribute:**
+
+🐛 `Report bugs` • 💡 `Add solutions` • ⚡ `Optimize code` • 🧪 `Add tests`
+
+</div>
+
+---
+
+<div align="center">
+
+### ⭐ **Found this helpful? Give it a star!** ⭐
+
+**[🔗 Visit Repository](https://github.com/sx4im/Leetcode_problems)** • **Happy Coding! 🎉**
+
+*Made with ❤️ for the coding community*
+
+</div>
