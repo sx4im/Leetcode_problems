@@ -67,10 +67,9 @@ A comprehensive collection of JavaScript solutions for LeetCode problems, featur
    ```
 
 ## 📈 Progress Tracking
-- ✅ **Easy**: 200+ problems solved
-- ✅ **Medium**: 250+ problems solved  
-- ✅ **Hard**: 50+ problems solved
-- 🎯 **Target**: 1000+ total solutions
+🟢 Easy    ████████████████████░░░░░░░░  200+ solved
+🟡 Medium  ██████████████████░░░░░░░░░░  250+ solved
+🔴 Hard    ██████░░░░░░░░░░░░░░░░░░░░░░   50+ solved
 
 ## 🧪 Testing
 Each solution includes:
