@@ -3,41 +3,31 @@
  * @param {number[][]} heights
  * @return {number[][]}
  */
-var pacificAtlantic = function(heights) {
-  const result = [];
-  const pacific = new Set();
-  const atlantic = new Set();
-
-  for (let i = 0; i < heights.length; i++) {
-    dfs(i, 0, pacific);
-    dfs(i, heights[0].length - 1, atlantic);
-  }
-  for (let j = 0; j < heights[0].length; j++) {
-    dfs(0, j, pacific);
-    dfs(heights.length - 1, j, atlantic);
-  }
-
-  for (let i = 0; i < heights.length; i++) {
-    for (let j = 0; j < heights[0].length; j++) {
-      const key = `${i},${j}`;
-      if (pacific.has(key) && atlantic.has(key)) {
-        result.push([i, j]);
-      }
+/**
+ * @param {number[][]} heights
+ * @return {number[][]}
+ */
+var pacificAtlantic = function(M) {
+    if (!M.length) return M
+    let y = M.length, x = M[0].length, ans = [],
+        dp = new Uint8Array(x * y)
+    const dfs = (i, j, w, h) => {
+        let ij = i * x + j
+        if ((dp[ij] & w) || M[i][j] < h) return
+        dp[ij] += w, h = M[i][j]
+        if (dp[ij] === 3) ans.push([i,j])
+        if (i + 1 < y) dfs(i+1, j, w, h)
+        if (i > 0) dfs(i-1, j, w, h)
+        if (j + 1 < x) dfs(i, j+1, w, h)
+        if (j > 0) dfs(i, j-1, w, h)
+    }   
+    for (let i = 0; i < y; i++) {
+        dfs(i, 0, 1, M[i][0])
+        dfs(i, x-1, 2, M[i][x-1])
     }
-  }
-
-  return result;
-
-  function dfs(r, c, ocean) {
-    const key = `${r},${c}`;
-    if (ocean.has(key)) return;
-    ocean.add(key);
-
-    [[r - 1, c], [r + 1, c], [r, c - 1], [r, c + 1]].forEach(([nr, nc]) => {
-      if (nr >= 0 && nr < heights.length && nc >= 0 && nc < heights[0].length
-        && heights[nr][nc] >= heights[r][c]) {
-        dfs(nr, nc, ocean);
-      }
-    });
-  }
+    for (let j = 0; j < x; j++) {
+        dfs(0, j, 1, M[0][j])
+        dfs(y-1, j, 2, M[y-1][j])
+    }
+    return ans
 };
